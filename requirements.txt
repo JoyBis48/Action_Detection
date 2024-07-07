@@ -1,0 +1,8 @@
+mediapipe
+numpy==1.26.4
+opencv-python
+tensorflow
+Pillow
+matplotlib
+pandas
+seaborn

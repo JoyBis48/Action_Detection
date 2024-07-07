@@ -1,0 +1,8 @@
+Logs/
+Sign_Language_Dataset/
+__pycache__/utilities.cpython-310.pyc
+__pycache__/utilities.cpython-312.pyc
+archive.zip
+asl_dataset/
+split_asl_dataset/
+processed_dataset/
