@@ -41,7 +41,7 @@ for i in range(10, 0, -1):
     cv2.imshow('Webcam Feed', frame)
     cv2.waitKey(1000)  # Wait for 1 second
 
-# Check if the countdown was interrupted
+# Checking if the countdown was interrupted
 if not ret:
     cap.release()
     cv2.destroyAllWindows()

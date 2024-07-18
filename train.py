@@ -1,5 +1,4 @@
 # Importing necessary libraries
-# type: ignore
 import numpy as np
 import os
 import mediapipe as mp
@@ -16,7 +15,7 @@ from tensorflow.keras.callbacks import TensorBoard, EarlyStopping
 mp_holistic = mp.solutions.holistic
 mp_drawing = mp.solutions.drawing_utils
 
-# Initialize the parameters
+# Initializing the parameters
 sequence_length = 30  # Number of frames in each sequence
 DATA_PATH = './Sign_Language_Dataset'  # Path to save the keypoints data
 os.listdir(DATA_PATH)
@@ -48,7 +47,7 @@ early_stopping_callback = EarlyStopping(monitor='train_accuracy', patience=34, v
 # Defining the LSTM Model
 model = Sequential()
 model.add(LSTM(64, return_sequences=True, activation='tanh', input_shape=(X_train.shape[1], X_train.shape[2])))
-model.add(Dropout(0.2))  # Dropout layer for regularization
+model.add(Dropout(0.2)) 
 model.add(LSTM(128, return_sequences=True, activation='tanh'))
 model.add(Dropout(0.2))  
 model.add(LSTM(64, return_sequences=False, activation='tanh')) # Last layer does not return sequences
