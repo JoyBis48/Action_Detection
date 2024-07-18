@@ -49,9 +49,9 @@ def get_unique_filename(base_path):
 
 def load_most_recent_model(directory, base_name):
     files = os.listdir(directory)
-    # Filter files based on the pattern of saved models
+    # Filtering only keras saved models
     model_files = [file for file in files if file.startswith(base_name) and file.endswith('.keras')]
-    # Sort files by modification time in descending order
+    # Sorting the saved models by modification time in descending order
     model_files.sort(key=lambda x: os.path.getmtime(os.path.join(directory, x)), reverse=True)
     # Loading the most recent model if any models were found
     if model_files:
