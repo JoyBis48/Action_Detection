@@ -39,7 +39,7 @@ for i in range(10, 0, -1):
         break
     cv2.putText(frame, f'Starting in {i} seconds...', (100, 250), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 4, cv2.LINE_AA)
     cv2.imshow('Webcam Feed', frame)
-    cv2.waitKey(1000)  # Wait for 1 second
+    cv2.waitKey(1000)  
 
 # Checking if the countdown was interrupted
 if not ret:
