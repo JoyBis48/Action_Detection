@@ -59,6 +59,21 @@ The **test.py** script is used to detect sign language gestures in real-time usi
     ```sh
     python test.py --model <model_name>
     ```
+    
+### Static Detection
+
+The **static_test.py** script is used to detect static signs involving letters and numbers using a trained MLP model.
+
+1. **Run the static detection script**:
+    ```sh
+    streamlit run static_test.py
+    ```
+    This will start a Streamlit app where the user can upload an image or use the webcam to capture an image for static sign detection.
+
+The **static.ipynb** notebook can be used for training the MLP model for static sign detection.
+
+1. **Run the notebook**:
+    Open **static.ipynb** in Jupyter Notebook or JupyterLab and run the cells to train the MLP model.
 
 ## Dependencies
 
@@ -68,28 +83,14 @@ The **test.py** script is used to detect sign language gestures in real-time usi
 - TensorFlow
 - scikit-learn
 - tqdm
+- Streamlit
+- Pillow
 
 ## File Descriptions
 
-- **collection.py**: Script for collecting keypoints data for different sign language gestures.
+ **collection.py**: Script for collecting keypoints data for different sign language gestures.
 - **train.py**: Script for training an LSTM model on the collected keypoints data.
 - **test.py**: Script for detecting sign language gestures in real-time using a webcam feed.
+- **static_test.py**: Script for detecting static signs involving letters and numbers using a trained MLP model.
+- **static.ipynb**: Jupyter Notebook for training the MLP model for static sign detection.
 - **utilities.py**: Contains utility functions for landmark detection, drawing landmarks, extracting keypoints, and loading models.
-
-## Directory Structure
-
-```
-Sign_Language_Detection/
-├── collection.py
-├── train.py
-├── test.py
-├── utilities.py
-├── requirements.txt
-├── Sign_Language_Dataset/
-│   └── <sign>/
-│       └── <sequence>/
-│           └── <frame>.npy
-├── saved_model/
-│   └── <model_name>.keras
-└── Logs/
-```
