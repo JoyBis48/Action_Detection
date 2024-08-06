@@ -14,7 +14,7 @@ To run this code, you need to have Python installed on your system. The project 
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/JoyBis48/Sign_Language_Detection.git
+    git clone [https://github.com/JoyBis48/Sign_Language_Detection.git](https://github.com/JoyBis48/Action_Detection.git)
     ```
 2. **Navigate to the project directory**:
     ```sh
