@@ -59,10 +59,16 @@ The **test.py** script is used to detect sign language gestures in real-time usi
     ```sh
     python test.py --model <model_name>
     ```
+## Video Showcase
+
+https://github.com/user-attachments/assets/a799f2cf-5ee4-42d7-88d2-919b3fb2e408
     
 ### Static Detection
 
 The **static_test.py** script is used to detect static signs involving letters and numbers using a trained MLP model.
+The signs are based on American Sign Language (ASL).
+
+![The-26-letters-and-10-digits-of-American-Sign-Language-ASL](https://github.com/user-attachments/assets/4eadbc60-99f5-4dc0-ad8d-6e2fcfcc138d)
 
 1. **Run the static detection script**:
     ```sh
