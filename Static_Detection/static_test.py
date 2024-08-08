@@ -8,7 +8,7 @@ import os
 import tempfile
 
 # Load the trained MLP Classifier model
-model = joblib.load('Static_Detection/saved_models/mlp_model.joblib')
+model = joblib.load('saved_models/mlp_model.joblib')
 
 # Loading the class dictionary
 class_names = {i: str(i) for i in range(10)}  # For numbers 0-9
